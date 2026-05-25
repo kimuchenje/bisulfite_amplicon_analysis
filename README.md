@@ -1,8 +1,12 @@
 # bisulfite_amplicon_analysis
 
-Processes Oxford Nanopore bisulfite amplicon sequencing data (FASTQ) and produces per-site cytosine methylation calls and figures in the style of CyMATE.
+Processes Oxford Nanopore bisulfite amplicon sequencing data (FASTQ) and produces per-site cytosine methylation calls and figures.
 
 Demirer Lab, Caltech Division of Chemistry and Chemical Engineering (CCE)
+
+---
+
+> **Note on CyMATE:** The TSV output format is compatible with [CyMATE](https://cymate.org/) (Hetzl et al., 2007, PMID [20204864](https://pubmed.ncbi.nlm.nih.gov/20204864/)), an independent tool developed by others for cytosine methylation analysis. This script is an original Demirer Lab pipeline and is not affiliated with or derived from CyMATE.
 
 ---
 
@@ -13,7 +17,7 @@ Demirer Lab, Caltech Division of Chemistry and Chemical Engineering (CCE)
 3. Aligns each read to the amplicon reference using a bisulfite-aware semi-global algorithm
 4. Calls methylation per site in CpG, CHG, and CHH contexts
 5. Optionally computes epiallele patterns across reads
-6. Outputs a CyMATE-compatible TSV and PNG/SVG figures
+6. Outputs a TSV in CyMATE-compatible format and PNG/SVG figures
 
 ## Outputs
 
