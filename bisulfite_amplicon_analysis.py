@@ -357,7 +357,7 @@ for ctx in ['CpG', 'CHG', 'CHH']:
 
 # ── TSV output ────────────────────────────────────────────────────────────────
 
-tsv_path = os.path.join(OUTDIR, f'{LABEL}_methylation_cymate.tsv')
+tsv_path = os.path.join(OUTDIR, f'{LABEL}_TargetedBisulfiteMeth.tsv')
 with open(tsv_path, 'w', newline='') as fh:
     w = csv.DictWriter(
         fh,
